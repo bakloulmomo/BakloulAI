@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bakloul AI</title>
+</head>
+<body>
+    <h1>Bakloul AI - Generatore di codice in C</h1>
+    <form method="post">
+        <label for="prompt">Descrivi il codice in C da generare:</label><br>
+        <textarea name="prompt" rows="4" cols="50"></textarea><br>
+        <button type="submit">Genera</button>
+    </form>
+
+    {% if output %}
+        <h2>Codice generato:</h2>
+        <pre>{{ output }}</pre>
+    {% endif %}
+</body>
+</html>
